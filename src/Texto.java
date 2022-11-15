@@ -1,6 +1,6 @@
 public class Texto {
     /*
-    La idea de esta clase es pegar acá todos los Strings que se van a imprimir por pantalla y sus respectivos getters y setters.
+    La idea de esta clase es pegar acá todos los Strings que se van a imprimir por pantalla y sus respectivos getters.
      */
 
     private String raiz="Hola, soy la raiz, quiere obtener el final 1 o el final 2?\n1.Final 1\n2.Final 2";
