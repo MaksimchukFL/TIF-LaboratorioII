@@ -7,17 +7,22 @@ public class Arbol {
     No nos interesa la eliminación de nodos, ya que el juego no necesitaría esta dinámica
      */
 
+    //Atributos
     private Nodo raiz;
     public int contadorDesiciones=0;
-    public int listaDesiciones[]=new int[100];
+    public int listaDesiciones[];
 
+    //Constructor
     public Arbol() {
         this.raiz = null;
+        listaDesiciones=new int[100];
     }
 
     //Metodos
     //Al iniciar la historia, también imprimirá automáticamente la primer parte.
     //Dará una posibilidad de desición, su valor se almacenará en memoria en un arreglo para su consulta.
+
+    //TODO: TRYCATCH! El ingreso de datos por teclado solo debería admitir los enteros 1 y 2, a si que se puede hacer una excepción propia que controle este error. Ya no lo hago porque me dio paja.
     public void iniciarHistoria(Nodo raiz){
     this.raiz=raiz;
     System.out.println(raiz.toString());
@@ -27,6 +32,8 @@ public class Arbol {
     listaDesiciones[0]=seleccion;
     contadorDesiciones+=1;
     }
+
+    //Al enlazar nuevos nodos, también se imprimen automaticamente sus strings.
 
     public void enlazarOpcion1(Nodo nodoinicial, Nodo nodoagregado){
         nodoinicial.opcion1=nodoagregado;

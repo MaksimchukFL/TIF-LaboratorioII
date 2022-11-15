@@ -5,8 +5,6 @@ public class Nodo {
     También tendrá un valor que corresponderá a la desición de cada nodo, que podrá ser una opción 1 o 2. Se inicializa en cero
      */
     public String texto;
-    public int desicion;
-
     public Nodo opcion1;
     public Nodo opcion2;
 
@@ -14,7 +12,6 @@ public class Nodo {
         this.texto = texto;
         this.opcion1=null;
         this.opcion2=null;
-        this.desicion=0;
     }
 
 
