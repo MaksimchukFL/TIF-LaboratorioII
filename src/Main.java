@@ -19,13 +19,13 @@ public class Main {
 
         Opcion[] opcionNodo40 = {
                 new Opcion("Continuar con tu camino",true), new Opcion("Ver si todavía está vivo",false),
-                new Opcion("Escapar como sea",false)
+                new Opcion("Correr y correr",true)
         };
 
         //Todas las opciones son false
         Opcion[] opcionNodo38 = {
-                new Opcion("Escapar como sea",false), new Opcion("Continuar tu camino",true),
-                new Opcion("Volver sobre tus pasos",false)
+                new Opcion("Escapar como sea",false), new Opcion("Patada al pecho del hombre",false),
+                new Opcion("Agarrar llave de tubo",false)
         };
 
         Opcion[] opcionNodo55 = {
@@ -48,7 +48,7 @@ public class Main {
         };
 
         Opcion[] opcionNodo51 = {
-                new Opcion("Enfrentarlos",true), new Opcion("Enfrentarlos no puede ser buena opción",false),
+                new Opcion("Enfrentarlos",true), new Opcion("No enfrentarlos puede ser buena opción",false),
         };
 
         //Todas las opciones son false
@@ -59,7 +59,7 @@ public class Main {
 
 
         /*
-        Definimos la serie de nodos que vamos a utilizar, establecidos en base a la historia y euristica de nuestro
+        Definimos la serie de nodos que vamos a utilizar, establecidos en base a la historia y heurística de nuestro
         arbol binario.
         Aplicamos distintos constructores de acuerdo al tipo de nodo que necesitamos construir
          */
@@ -236,7 +236,7 @@ public class Main {
                 leer.nextLine();
                 leer.nextLine();
                 Musica.pausar(finalGame);
-            }else if(juego.getActual().getLlave() == 43){
+            }else if(juego.getActual().getLlave() == 43 || juego.getActual().getLlave() == 54){
                 System.out.println("Presione enter para continuar...");
                 leer.nextLine();
                 Musica.reproducir(shoot);
