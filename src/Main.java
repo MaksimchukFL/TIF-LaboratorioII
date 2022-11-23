@@ -25,7 +25,7 @@ public class Main {
         //Todas las opciones son false
         Opcion[] opcionNodo38 = {
                 new Opcion("Escapar como sea",false), new Opcion("Patada al pecho del hombre",false),
-                new Opcion("Agarrar llave de tubo",false)
+                new Opcion("Agarrar llave de tubo y golpearlo",false)
         };
 
         Opcion[] opcionNodo55 = {
@@ -130,7 +130,8 @@ public class Main {
                             case 1: Musica.pausar(mainTheme);
                                 juego.volverARaiz();
                                 break;
-                            case 2: salir = true;
+                            case 2: juego.volverARaiz();
+                                salir = true;
                                 break;
                             default: System.out.println("OPCION INGRESADA INVALIDA");
                                 salir = false;
